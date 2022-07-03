@@ -230,4 +230,10 @@ section.features {
     .feature-item {
         margin-top: 5rem;
     }
+    .features .card {
+        padding-top: 4rem!important;
+    }
+    .features .card-img img {
+        height: 50px;
+    }
 }
