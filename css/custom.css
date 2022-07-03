@@ -1,0 +1,233 @@
+:root {
+    --primary: #068A03;
+    --onprimary: #C9FFC8;
+    --secondary: #5C5C5C;
+    --secondaryinverse: #646363;
+    --onsecondary: #A3A3A3;
+    --foreground: #E7FAE7;
+}
+
+
+/* * {
+    border: 1px solid red;
+} */
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: var(--foreground);
+    font-family: 'Lato', sans-serif;
+    color: var(--secondary);
+}
+
+.form-control {
+    background-color: var(--secondary)!important;
+    background: var(--secondary) !important;
+    font-family: inherit;
+    border: 0px;
+    padding-left: 2rem;
+}
+
+.form-control::placeholder {
+    color: var(--onsecondary)!important;
+}
+
+.nav-item.active a {
+    font-weight: bold;
+    color: var(--primary)!important;
+}
+
+.text-largest {
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 1.4;
+}
+
+
+/* .scale-medium {
+    transform: scaleY(0.80) scaleX(1);
+} */
+
+.text-large {
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+
+.text-medium {
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+
+.heading {
+    margin-bottom: 4rem;
+}
+
+.body1 {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.body2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.3;
+    text-align: justify;
+}
+
+.text-primary {
+    color: var(--primary)!important;
+}
+
+.text-onprimary {
+    color: var(--onprimary)!important;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    background: var(--primary);
+}
+
+.bg-secondary {
+    background-color: var(--secondary)
+}
+
+.bg-secondaryinverse {
+    background-color: var(--secondaryinverse)
+}
+
+.text-secondary {
+    color: var(--secondary);
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    background: var(--secondary);
+}
+
+.header {
+    padding: 0 13rem;
+    transition: .2s ease;
+    z-index: 100;
+}
+
+.header.bg-white img {
+    height: 30px
+}
+
+.banner {
+    background-image: url('../img/foreground-map.png');
+    background-size: contain;
+    padding: 10rem 0;
+    padding-top: 15rem;
+}
+
+.banner2 {
+    background-image: linear-gradient(to bottom, #c9ffc88a, #c9ffc8d0), url('../img/foreground-map.png');
+    background-size: contain;
+    padding: 8rem 0;
+    padding-top: 15rem;
+}
+
+section {
+    padding: 10rem 0
+}
+
+section.client .row {
+    margin-top: 10rem;
+}
+
+section.features {
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+.splide__arrow {
+    background-color: var(--primary)!important;
+    width: 50px!important;
+    height: 50px!important;
+}
+
+.navbar-toggler-icon {
+    fill: var(--primary)!important;
+}
+
+.splide__arrow svg {
+    fill: #fff!important;
+}
+
+.feature-item {
+    margin-top: 20rem;
+}
+
+.features .card .animate-up {
+    opacity: 0;
+}
+
+.features .card:hover .animate-up {
+    opacity: 1;
+    animation: animate-up .3s ease-in-out;
+}
+
+@keyframes animate-up {
+    from {
+        transform: translateX(8rem);
+    }
+    to {
+        transform: translateX(0rem);
+    }
+}
+
+@media(max-width:900px) {
+    .bg-md-light {
+        background-color: #fff!important;
+    }
+    .w-md-100 {
+        width: 100%!important;
+    }
+    .w-md-50 {
+        width: 50%!important;
+    }
+    .text-largest {
+        font-size: 4rem;
+        font-weight: 900;
+        line-height: 1.4;
+    }
+    /* .scale-medium {
+        transform: scaleY(0.80) scaleX(1);
+    } */
+    .text-large {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    .heading {
+        text-align: center;
+    }
+    .header {
+        padding: 0 2rem;
+    }
+    section {
+        padding: 5rem 2rem
+    }
+    .splide__slide img {
+        margin-bottom: 3rem;
+    }
+    .splide__arrow--next {
+        top: -3rem;
+        right: -1rem!important;
+    }
+    .splide__arrow--prev {
+        top: -3rem;
+        left: -1rem!important;
+    }
+    section.medium-banner {
+        padding-top: 8rem;
+    }
+    .opacity-md-25 {
+        opacity: 25%;
+    }
+    .feature-item {
+        margin-top: 5rem;
+    }
+}
