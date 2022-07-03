@@ -170,6 +170,14 @@ section.features {
     animation: animate-up .3s ease-in-out;
 }
 
+.home-features .card {
+    padding-top: 4rem!important;
+}
+
+.home-features .card-img img {
+    height: 60px;
+}
+
 @keyframes animate-up {
     from {
         transform: translateX(8rem);
@@ -230,10 +238,10 @@ section.features {
     .feature-item {
         margin-top: 5rem;
     }
-    .features .card {
-        padding-top: 4rem!important;
-    }
-    .features .card-img img {
+    .home-features .card-img img {
         height: 50px;
+    }
+    .splide {
+        margin-top: -6rem
     }
 }

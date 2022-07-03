@@ -101,7 +101,7 @@
             </div>
         </div>
     </section>
-    <section class="features">
+    <section class="features home-features">
         <div class="container ">
             <div class="heading position-relative">
                 <h2 class="text-large text-capitalize text-center">app features at a glance</h2>
@@ -126,7 +126,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-md-4 col-lg-3">
-                    <div class="card h-100 bg-secondaryinverse rounded rounded-3  p-4 position-relative overflow-hidden">
+                    <div class="card h-100 bg-secondaryinverse rounded rounded-3 p-4 position-relative overflow-hidden">
                         <div class="card-img text-center">
                             <img src="img/icons/accelerate.png" alt="">
                         </div>
@@ -252,7 +252,7 @@
                         <li class="splide__slide">
                             <div class="row gx-5 align-items-center justify-content-center">
                                 <div class="col-md-5">
-                                    <img src="img/mail-image.png" alt="" class="w-100">
+                                    <img src="img/mail-image.png" data-splide-lazy="img/mail-image.png" alt="" class="w-100">
                                 </div>
                                 <div class="col-md-7">
                                     <p class="body2">Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis placeat, dicta modi ut ex inventore! Laborum, alias quo? Incidunt consequuntur maxime ipsam, quae laboriosam unde voluptates in velit ipsum.</p>
@@ -265,7 +265,7 @@
                         <li class="splide__slide">
                             <div class="row gx-5 align-items-center justify-content-center">
                                 <div class="col-md-5">
-                                    <img src="img/mail-image.png" alt="" class="w-100">
+                                    <img src="img/mail-image.png" data-splide-lazy="img/mail-image.png" alt="" class="w-100">
                                 </div>
                                 <div class="col-md-7">
                                     <p class="body2">Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis placeat, dicta modi ut ex inventore! Laborum, alias quo? Incidunt consequuntur maxime ipsam, quae laboriosam unde voluptates in velit ipsum.</p>
@@ -277,7 +277,7 @@
                         <li class="splide__slide">
                             <div class="row gx-5 align-items-center justify-content-center">
                                 <div class="col-md-5">
-                                    <img src="img/mail-image.png" alt="" class="w-100">
+                                    <img src="img/mail-image.png" data-splide-lazy="img/mail-image.png" alt="" class="w-100">
                                 </div>
                                 <div class="col-md-7">
                                     <p class="body2">Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis placeat, dicta modi ut ex inventore! Laborum, alias quo? Incidunt consequuntur maxime ipsam, quae laboriosam unde voluptates in velit ipsum.</p>
@@ -641,7 +641,16 @@
 
 
         var splide = new Splide('.splide', {
-            type: 'carousel',
+            loop: true,
+            gap: 50,
+            autoplay: true,
+            interval: 4000,
+            speed: 3000,
+            rewind: true,
+            rewindspeed: 3000,
+            pauseOnHover: true,
+            lazyLoad: 'sequential'
+
 
         });
 
