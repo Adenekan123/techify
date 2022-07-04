@@ -2332,7 +2332,7 @@ textarea.form-control-lg {
 
 .form-select:-moz-focusring {
     color: transparent;
-    text-shadow: 0 0 0 #212529
+    text-shadow: 0 0 0 #d2d5d8
 }
 
 .form-select-sm {
@@ -3008,7 +3008,7 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #0d6efd;
+    background-color: var(--primary);
     /* border-color: #0d6efd */
 }
 
@@ -3021,9 +3021,9 @@ fieldset:disabled .btn {
 .btn-check:focus+.btn-primary,
 .btn-primary:focus {
     color: #fff;
-    background-color: #0b5ed7;
-    border-color: #0a58ca;
-    box-shadow: 0 0 0 .25rem rgba(49, 132, 253, .5)
+    background-color: var(--primary);
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 .25rem rgba(4, 182, 28, 0.5)
 }
 
 .btn-check:active+.btn-primary,
@@ -3032,8 +3032,8 @@ fieldset:disabled .btn {
 .btn-primary:active,
 .show>.btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #0a58ca;
-    border-color: #0a53be
+    background-color: var(--primary);
+    border-color: var(--primary)
 }
 
 .btn-check:active+.btn-primary:focus,
@@ -3041,7 +3041,7 @@ fieldset:disabled .btn {
 .btn-primary.active:focus,
 .btn-primary:active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 .25rem rgba(49, 132, 253, .5)
+    box-shadow: 0 0 0 .25rem rgba(24, 133, 2, 0.5)
 }
 
 .btn-primary.disabled,

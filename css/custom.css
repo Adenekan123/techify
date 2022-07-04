@@ -22,12 +22,14 @@ body {
     color: var(--secondary);
 }
 
-.form-control {
+.form-control,
+.form-select {
     background-color: var(--secondary)!important;
     background: var(--secondary) !important;
     font-family: inherit;
     border: 0px;
     padding-left: 2rem;
+    color: var(--onsecondary)
 }
 
 .form-control::placeholder {
@@ -162,12 +164,29 @@ section.features {
 }
 
 .features .card .animate-up {
-    opacity: 0;
+    /* opacity: 0; */
+    display: none!important;
 }
 
-.features .card:hover .animate-up {
+
+/* .features .card:hover .animate-up {
     opacity: 1;
     animation: animate-up .3s ease-in-out;
+} */
+
+.features .card {
+    transition: .4s ease;
+}
+
+.features .card:hover {
+    transform: scale(1.15);
+    z-index: 90;
+    background-color: var(--onprimary);
+    color: var(--secondary);
+}
+
+.features .card:hover img {
+    filter: invert(1);
 }
 
 .home-features .card {
@@ -178,14 +197,23 @@ section.features {
     height: 60px;
 }
 
-@keyframes animate-up {
+.hover-primary:hover {
+    color: var(--primary)!important;
+}
+
+.hover-primary:hover svg {
+    fill: var(--primary)!important;
+}
+
+
+/* @keyframes animate-up {
     from {
         transform: translateX(8rem);
     }
     to {
         transform: translateX(0rem);
     }
-}
+} */
 
 @media(max-width:900px) {
     .bg-md-light {
@@ -241,7 +269,7 @@ section.features {
     .home-features .card-img img {
         height: 50px;
     }
-    .splide {
+    /* .splide {
         margin-top: -6rem
-    }
+    } */
 }
